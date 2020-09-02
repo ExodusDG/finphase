@@ -1,0 +1,578 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+/*HEADER*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    height: 50vw;
+}
+
+.navbar {
+    background: #1B1B1B;
+    position: relative;
+    width: 105vw;
+    height: 6vw;
+    right: 5vw;
+}
+
+.logotype {
+    position: relative;
+    left: 10vw;
+    width: 13vw;
+}
+
+.navbar ul>li {
+    list-style-type: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: relative;
+    left: 45vw;
+    top: 1vw;
+    font-size: 0.9vw;
+}
+
+.navbar-links li {
+    margin-right: 2vw;
+}
+
+.navbar-button {
+    position: relative;
+    border: none;
+    border: 1.5px solid #FFFFFF;
+    background: #1B1B1B;
+    color: white;
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    border-radius: 0.2vw;
+    bottom: 0.6vw;
+}
+
+.header-line {
+    width: 8vw;
+    height: 0.4vw;
+    border-radius: 2vw;
+    background: #1B1B1B;
+    top: 11.6vw;
+    left: 12vw;
+    position: relative;
+}
+
+.header-body-text {
+    position: relative;
+    left: 18vw;
+    top: 10vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-body-title {
+    width: 35vw;
+    font-weight: 700;
+    font-size: 2.8vw;
+}
+
+.header-body-desc {
+    width: 35vw;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.header-body-button {
+    position: relative;
+    border: 0.15vw solid #1B1B1B;
+    padding: 0.8vw 5vw 0.8vw 5vw;
+    background: transparent;
+    border-radius: 0.4vw;
+    font-weight: 500;
+    font-size: 1vw;
+    top: 1vw;
+    transition: 0.4s;
+    z-index: 999;
+}
+
+.header-contacts {
+    position: relative;
+    color: #1B1B1B;
+    top: 22vw;
+    left: 90vw;
+    font-size: 1.5vw;
+}
+
+.header-contacts i {
+    margin-right: 1vw;
+}
+
+
+/*UNIQUE*/
+
+.unique {
+    background: #F5F5F5;
+    position: relative;
+    width: 105vw;
+    right: 5vw;
+    height: 30vw;
+}
+
+.unique-title {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    top: 3vw;
+}
+
+.text-title {
+    font-weight: 600;
+    font-size: 2.8vw;
+}
+
+.text-desc {
+    font-weight: 300;
+    font-size: 0.8vw;
+}
+
+.unique-list {
+    position: relative;
+    left: 22vw;
+    top: 8vw;
+}
+
+.unique-number {
+    margin-right: 4vw;
+}
+
+.number-desc {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    width: 15vw;
+    text-align: center;
+    position: relative;
+    right: 4vw;
+    top: 1vw;
+}
+
+.number-line {
+    position: relative;
+    width: 7vw;
+    height: 0.2vw;
+    background: #C4C4C4;
+    bottom: 8vw;
+    left: 9vw;
+}
+
+
+/*DIGITAL*/
+
+.digital {
+    height: 50vw;
+}
+
+.digital-title {
+    position: relative;
+    top: 5vw;
+}
+
+.digital-cards {
+    position: relative;
+    left: 17vw;
+    top: 10vw;
+}
+
+.digital-card {
+    background: #F8F8F8;
+    transition: 0.4s;
+    height: 20vw;
+    width: 14vw;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5vw;
+    margin-right: 3vw;
+}
+
+.digital-card img {
+    position: relative;
+    top: 3vw;
+}
+
+.digital-card-title {
+    position: relative;
+    top: 4vw;
+    font-weight: 600;
+}
+
+.digital-card-desc {
+    position: relative;
+    top: 6vw;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8vw;
+    width: 12vw;
+    left: 1vw;
+}
+
+.digital-card-fix {
+    position: relative;
+    bottom: 1.5vw;
+}
+
+.digital-card:hover {
+    background: #1B1B1B;
+    color: white;
+}
+
+.digital-footer-title {
+    position: relative;
+    top: 15vw;
+}
+
+
+/*ADVANTAGES*/
+
+.advantages {
+    position: relative;
+    height: 50vw;
+    top: 15vw;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    width: 25vw;
+    left: 15vw;
+    position: relative;
+}
+
+.advantages-desc {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    width: 25vw;
+    left: 15vw;
+    position: relative;
+}
+
+.adv-img {
+    width: 40vw;
+    position: relative;
+    left: 20vw;
+    bottom: 5vw;
+}
+
+.adv-title {
+    font-weight: 600;
+}
+
+.adv-desc {
+    width: 15vw;
+}
+
+.advantages-cards {
+    position: relative;
+    left: 16vw;
+}
+
+.advantages-card {
+    margin-right: 5vw;
+}
+
+.adv-card-image img {
+    width: 3vw;
+    margin-right: 1vw;
+}
+
+
+/*PRICING*/
+
+.pricing {
+    height: 50vw;
+    padding-top: 15vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+}
+
+.pricing-switch {
+    position: relative;
+    left: 42vw;
+    top: 1vw;
+}
+
+.pricing-switch p {
+    margin-right: 4vw;
+    color: #6C6C6C;
+}
+
+.pricing-mounthly {
+    cursor: pointer;
+}
+
+.pricing-yearly {
+    cursor: pointer;
+}
+
+
+/*ACTIVE PRICING*/
+
+.pricing-mounthly-active {
+    color: black !important;
+}
+
+.pricing-yearly-active {
+    color: black !important;
+}
+
+
+/*END*/
+
+.pricing-mounthly i {
+    margin-right: 1vw;
+}
+
+.pricing-yearly i {
+    margin-right: 1vw;
+}
+
+.pricing-cards {
+    top: 5vw;
+    position: relative;
+    left: 14vw;
+}
+
+.pricing-card {
+    background: transparent;
+    color: black;
+    border: 0.2vw solid #1B1B1B;
+    height: 27vw;
+    width: 20vw;
+    margin-right: 5vw;
+    border-radius: 0.5vw;
+}
+
+.pricing-card-title {
+    position: relative;
+    top: 1.5vw;
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+
+.pricing-card-price {
+    font-size: 3vw;
+    top: 1vw;
+    position: relative;
+}
+
+.pricing-card-price sub {
+    font-size: 0.8vw;
+}
+
+.pricing-card li {
+    list-style-type: none;
+    text-align: left;
+    position: relative;
+    left: 2vw;
+    top: 1vw;
+    margin-top: 1vw;
+}
+
+.pricing-card-button {
+    position: relative;
+    border: none;
+    border: 0.2vw solid black;
+    background: white;
+    color: black;
+    padding: 0.4vw 2.9vw 0.4vw 2.9vw;
+    border-radius: 0.7vw;
+    top: 5vw;
+    transition: 0.4s;
+}
+
+.pricing-card-button:hover {
+    background: black;
+    color: white;
+}
+
+.pricing-card-center {
+    background: transparent;
+    color: black;
+    border: 0.2vw solid #1B1B1B;
+    height: 29vw;
+    width: 22vw;
+    margin-right: 5vw;
+    position: relative;
+    bottom: 1vw;
+    border-radius: 0.5vw;
+}
+
+.pricing-card-center li {
+    list-style-type: none;
+    text-align: left;
+    position: relative;
+    left: 2vw;
+    top: 1vw;
+    margin-top: 1vw;
+}
+
+
+/*CONTACTS*/
+
+.contacts {
+    height: 50vw;
+    top: 15vw;
+    position: relative;
+}
+
+.contacts-cards {
+    position: relative;
+    left: 15vw;
+    top: 5vw;
+}
+
+.contacts-card {
+    width: 20vw;
+    height: 13vw;
+    border: 0.2vw solid #1B1B1B;
+    border-radius: 0.3vw;
+    margin-right: 4vw;
+}
+
+.contacts-card img {
+    width: 4vw;
+    position: relative;
+    bottom: 2.5vw;
+}
+
+.cont-card-title {
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.contacts-request {
+    padding-top: 10vw;
+}
+
+.contacts-request img {
+    width: 35vw;
+    position: relative;
+    left: 15vw;
+}
+
+.request-form {
+    position: relative;
+    top: 5vw;
+    left: 25vw;
+}
+
+.input_area {
+    padding: 0.9vw;
+    width: 20vw;
+    border-radius: 0.3vw;
+    height: 3vw;
+    font-size: 0.8vw;
+    margin-bottom: 1vw;
+    border: 0.2vw solid #9E9E9E;
+    position: relative;
+}
+
+.request-form li {
+    list-style-type: none;
+}
+
+.input_area-m {
+    padding-left: 0.9vw;
+    padding-bottom: 3vw;
+    width: 20vw;
+    border-radius: 0.3vw;
+    height: 6vw;
+    font-size: 0.8vw;
+    border: 0.2vw solid #9E9E9E;
+}
+
+.send-button {
+    position: relative;
+    border: none;
+    border: 0.2vw solid #9E9E9E;
+    background: white;
+    color: black;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 0.7vw;
+    top: 1vw;
+    transition: 0.4s;
+}
+
+.send-button:hover {
+    border: 0.2vw solid black;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background: #1B1B1B;
+    height: 30vw;
+    top: 28vw;
+    position: relative;
+}
+
+.footer-left {
+    position: relative;
+    left: 15vw;
+    top: 5vw;
+}
+
+.footer-left img {
+    position: relative;
+    width: 15vw;
+}
+
+.footer-text {
+    width: 20vw;
+    color: white;
+    padding-top: 3vw;
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation {
+    position: relative;
+    left: 60vw;
+    color: white;
+    bottom: 8.5vw;
+}
+
+.nav-title {
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.nav-link {
+    position: relative;
+    right: 0.8vw;
+    width: 10vw;
+}
+
+.footer-cor {
+    position: relative;
+    color: white;
+    bottom: 2vw;
+}
