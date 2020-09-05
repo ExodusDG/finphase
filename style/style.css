@@ -79,13 +79,13 @@ a:hover {
     border-radius: 2vw;
     background: #1B1B1B;
     top: 11.6vw;
-    left: 12vw;
+    left: 8vw;
     position: relative;
 }
 
 .header-body-text {
     position: relative;
-    left: 18vw;
+    left: 13vw;
     top: 10vw;
     font-family: 'Roboto', sans-serif;
 }
@@ -125,6 +125,13 @@ a:hover {
 
 .header-contacts i {
     margin-right: 1vw;
+}
+
+.header-image img {
+    width: 30vw;
+    position: relative;
+    left: 20vw;
+    top: 7vw;
 }
 
 
@@ -730,6 +737,12 @@ a:hover {
         top: 17vw;
         left: 86vw;
     }
+    .header-image img {
+        width: 30vw;
+        position: relative;
+        left: 9vw;
+        top: 7vw;
+    }
 }
 
 @media (max-width: 375px) {
@@ -839,6 +852,12 @@ a:hover {
         top: 17vw;
         left: 86vw;
     }
+    .header-image img {
+        width: 30vw;
+        position: relative;
+        left: 9vw;
+        top: 7vw;
+    }
 }
 
 @media (max-width: 200px) {
@@ -947,5 +966,11 @@ a:hover {
     .header-contacts {
         top: 17vw;
         left: 86vw;
+    }
+    .header-image img {
+        width: 30vw;
+        position: relative;
+        left: 9vw;
+        top: 7vw;
     }
 }
