@@ -130,8 +130,8 @@ a:hover {
 .header-image img {
     width: 30vw;
     position: relative;
-    left: 20vw;
-    top: 7vw;
+    left: 16vw;
+    top: 8vw;
 }
 
 
@@ -585,11 +585,13 @@ a:hover {
 .nav-title {
     font-weight: 500;
     font-size: 1.2vw;
+    position: relative;
+    right: 14.2vw;
 }
 
 .nav-link {
     position: relative;
-    right: 0.8vw;
+    right: 15vw;
     width: 10vw;
 }
 
@@ -597,6 +599,10 @@ a:hover {
     position: relative;
     color: white;
     bottom: 2vw;
+}
+
+.nav-link-a {
+    width: 10vw;
 }
 
 
@@ -727,6 +733,7 @@ a:hover {
     .nav-link {
         display: block;
         padding: .2rem 0.5rem;
+        right: 16vw;
     }
     .footer-cor {
         position: relative;
@@ -842,6 +849,7 @@ a:hover {
     .nav-link {
         display: block;
         padding: .2rem 0.5rem;
+        right: 16vw;
     }
     .footer-cor {
         position: relative;
@@ -956,6 +964,7 @@ a:hover {
     }
     .nav-link {
         display: block;
+        right: 16vw;
         padding: .2rem 0.5rem;
     }
     .footer-cor {
