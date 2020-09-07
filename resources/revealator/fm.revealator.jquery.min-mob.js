@@ -1,6 +1,6 @@
 var Revealator = "undefined" != typeof Revealator ? Revealator : {};
 $(function() {
-    Revealator = $.extend({}, { timer: null, busy: !1, scroll_padding: 0, effects_padding: 0, refresh: function() {} }, "undefined" != typeof Revealator ? Revealator : {}), Revealator.refresh = function() {
+    Revealator = $.extend({}, { timer: null, busy: !1, scroll_padding: -800, effects_padding: -800, refresh: function() {} }, "undefined" != typeof Revealator ? Revealator : {}), Revealator.refresh = function() {
         var a = $(window),
             e = $(document),
             o = $(document.body),
