@@ -613,6 +613,19 @@ a:hover {
         position: relative;
         left: 2vw;
     }
+    .footer-cor {
+        position: relative;
+        color: white;
+        bottom: 4vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .unique-list {
+        position: relative;
+        left: 22vw;
+        top: 6vw;
+    }
 }
 
 @media (max-width: 1099px) {
@@ -622,17 +635,33 @@ a:hover {
     .header-contacts {
         top: 20vw;
     }
+    .footer {
+        background: #1B1B1B;
+        height: 33vw;
+        top: 28vw;
+        position: relative;
+    }
 }
 
 @media (max-width: 768px) {
+    body {
+        position: relative;
+        left: 2vw;
+    }
     .pricing-card-button {
         top: 4vw;
+    }
+    .header-contacts {
+        left: 88vw;
     }
     .unique-list {
         top: 4vw;
     }
     .nav-link {
-        right: 2vw;
+        right: 16.2vw;
+    }
+    .navbar-links {
+        left: 36vw;
     }
 }
 
@@ -641,9 +670,19 @@ a:hover {
         margin-top: 0;
         margin-bottom: 0.3rem;
     }
+    .navbar-img {
+        width: 2vw;
+    }
+    .header-body {
+        position: relative;
+        right: 5vw;
+    }
     .navbar {
         width: 110vw;
         height: 10vw;
+    }
+    .navbar-button {
+        bottom: 0.9vw;
     }
     .logotype {
         position: relative;
@@ -666,6 +705,14 @@ a:hover {
     .header-body-button {
         font-size: 1.5vw;
         top: 0vw;
+    }
+    .unique-title {
+        position: relative;
+        left: 0vw;
+    }
+    .unique-list {
+        top: 9vw;
+        left: 19vw;
     }
     .unique {
         background: #F5F5F5;
@@ -756,6 +803,9 @@ a:hover {
     p {
         margin-top: 0;
         margin-bottom: 0.3rem;
+    }
+    .navbar-img {
+        width: 1vw;
     }
     .navbar {
         width: 110vw;
@@ -873,6 +923,9 @@ a:hover {
         margin-top: 0;
         margin-bottom: 0.3rem;
     }
+    .navbar-img {
+        width: 1vw;
+    }
     .navbar {
         width: 110vw;
         height: 10vw;
@@ -964,8 +1017,8 @@ a:hover {
     }
     .nav-link {
         display: block;
-        right: 16vw;
         padding: .2rem 0.5rem;
+        right: 16vw;
     }
     .footer-cor {
         position: relative;
