@@ -60,3 +60,37 @@ $(document).ready(function() {
         $('.year').show()
     });
 });
+$(document).ready(function() {
+
+    var $menu = $("#menu");
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100 && $menu.hasClass("default")) {
+            $menu.removeClass("default").addClass("fixed");
+        } else if ($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+            $menu.removeClass("fixed").addClass("default");
+        }
+    }); //scroll
+});
+
+$(document).ready(function() {
+    var $navbar = $('.navbar');
+    var $button = $('.navbar-button')
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $navbar.addClass('navbar-scroll');
+            $button.addClass('navbar-button-scroll');
+        } else {
+            $navbar.removeClass('navbar-scroll');
+            $button.removeClass('navbar-button-scroll');
+        }
+    });
+
+});
+
+$(document).ready(function() {
+    $('.mobile-menu').hide();
+    $('#hamb-button').click(function() {
+        $('.mobile-menu').toggleClass('mb-active');
+    });
+});
