@@ -26,20 +26,34 @@ a:hover {
 
 .navbar {
     background: #1B1B1B;
-    position: relative;
     width: 105vw;
     height: 6vw;
-    right: 5vw;
+    position: fixed;
+    right: 0vw;
+    z-index: 999;
+    transition: 0.4s;
+    ;
+}
+
+.navbar-scroll {
+    background: #1d1d1dda !important;
+    transition: 0.4s;
 }
 
 .logotype {
     position: relative;
-    left: 10vw;
-    width: 13vw;
+    left: 15vw;
+    width: 10vw;
 }
 
 .navbar ul>li {
     list-style-type: none;
+}
+
+.menu-logotype {
+    position: relative;
+    width: 40vw;
+    left: 0.5vw;
 }
 
 .navbar-img {
@@ -54,12 +68,16 @@ a:hover {
     font-weight: 400;
     position: relative;
     left: 45vw;
-    top: 1vw;
+    top: 0.5vw;
     font-size: 0.9vw;
 }
 
 .navbar-links li {
     margin-right: 2vw;
+}
+
+.hamburger-button {
+    display: none;
 }
 
 .navbar-button {
@@ -73,12 +91,16 @@ a:hover {
     bottom: 0.6vw;
 }
 
+.navbar-button-scroll {
+    background: #2c2c2cb0 !important;
+}
+
 .header-line {
     width: 8vw;
     height: 0.4vw;
     border-radius: 2vw;
     background: #1B1B1B;
-    top: 13.6vw;
+    top: 21.6vw;
     left: 8vw;
     position: relative;
 }
@@ -86,7 +108,7 @@ a:hover {
 .header-body-text {
     position: relative;
     left: 10vw;
-    top: 12vw;
+    top: 20vw;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -118,7 +140,7 @@ a:hover {
 .header-contacts {
     position: relative;
     color: #1B1B1B;
-    top: 22vw;
+    top: 25vw;
     left: 90vw;
     font-size: 1.5vw;
 }
@@ -131,7 +153,7 @@ a:hover {
     width: 30vw;
     position: relative;
     left: 16vw;
-    top: 8vw;
+    top: 14vw;
 }
 
 
@@ -549,7 +571,7 @@ a:hover {
 
 .footer {
     background: #1B1B1B;
-    height: 30vw;
+    height: 35vw;
     top: 28vw;
     position: relative;
 }
@@ -624,7 +646,7 @@ a:hover {
     .unique-list {
         position: relative;
         left: 22vw;
-        top: 6vw;
+        top: 20vw;
     }
 }
 
@@ -638,12 +660,111 @@ a:hover {
     .footer {
         background: #1B1B1B;
         height: 33vw;
-        top: 28vw;
+        top: 36vw;
+        right: 2vw;
         position: relative;
     }
 }
 
 @media (max-width: 768px) {
+    .mobile-navbar {
+        display: none;
+    }
+    .header-body-title {
+        width: 40vw;
+        font-weight: 700;
+        font-size: 3vw;
+        bottom: 6vw;
+        right: 7vw;
+        position: relative;
+    }
+    .header-body-desc {
+        width: 45vw;
+        font-weight: 400;
+        bottom: 6vw;
+        font-size: 2vw;
+        right: 7vw;
+        position: relative;
+    }
+    .header-body-button {
+        font-size: 2vw;
+        top: 0vw;
+        position: relative;
+        right: 0vw;
+    }
+    .header-image img {
+        width: 35vw;
+        position: relative;
+        left: 2vw;
+        top: 14vw;
+    }
+    .header-line {
+        left: 0vw;
+        bottom: 6vw;
+    }
+    .header-line {
+        top: 15.6vw;
+    }
+    .text-title {
+        font-size: 4vw;
+    }
+    .text-desc {
+        font-size: 2vw;
+        width: 80vw;
+        left: 10vw;
+        position: relative;
+    }
+    .unique {
+        background: #F5F5F5;
+        position: relative;
+        width: 105vw;
+        right: 5vw;
+        height: 55vw;
+    }
+    .mobile-menu {
+        background: #1B1B1B;
+        height: 200vw;
+        max-width: 50vw;
+        position: fixed;
+        z-index: 998;
+        top: 0vw;
+        left: 0vw;
+    }
+    .menu-logotype {
+        position: relative;
+        right: 2vw;
+        top: 2vw;
+    }
+    .navbar-menu {
+        list-style-type: none;
+        color: white;
+        font-size: 3vw;
+    }
+    .navbar-menu li {
+        margin-bottom: 3vw;
+    }
+    .mb-default {
+        width: 0%;
+        transition: 0.4s;
+    }
+    .mb-active {
+        width: 100% !important;
+        transition: 0.4s;
+        display: inline !important;
+    }
+    .hamburger-button {
+        position: relative;
+        left: 90vw;
+        top: 2vw;
+        display: inline;
+        font-size: 3vw;
+        cursor: pointer;
+    }
+    .menu-links {
+        position: relative;
+        top: 5vw;
+        right: 1vw;
+    }
     body {
         position: relative;
         left: 2vw;
@@ -655,13 +776,199 @@ a:hover {
         left: 88vw;
     }
     .unique-list {
-        top: 4vw;
+        top: 10vw;
+        left: 10vw;
     }
     .nav-link {
         right: 16.2vw;
     }
     .navbar-links {
         left: 36vw;
+    }
+    .unique-number img {
+        width: 12vw;
+    }
+    .unique-number {
+        margin-right: 10vw;
+    }
+    .number-desc {
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5vw;
+        width: 15vw;
+        text-align: center;
+        position: relative;
+        right: 2vw;
+        top: 1vw;
+    }
+    .number-line {
+        position: relative;
+        width: 7vw;
+        height: 0.5vw;
+        background: #C4C4C4;
+        bottom: 18vw;
+        left: 14vw;
+    }
+    .digital-card {
+        background: #F8F8F8;
+        transition: 0.4s;
+        height: 23vw;
+        width: 18vw;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.5vw;
+        margin-right: 3vw;
+    }
+    .digital-card-desc {
+        position: relative;
+        top: 3vw;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2vw;
+        width: 18vw;
+        left: 0vw;
+    }
+    .digital-cards {
+        position: relative;
+        left: 5vw;
+        top: 10vw;
+    }
+    .digital-card-fix img {
+        width: 6.5vw !important;
+        position: relative;
+        top: 4vw;
+    }
+    .digital-card img {
+        position: relative;
+        top: 3vw;
+        width: 5vw;
+    }
+    .digital-card-title {
+        position: relative;
+        top: 4vw;
+        font-weight: 600;
+        font-size: 1.3vw;
+    }
+    .advantages {
+        position: relative;
+        height: 50vw;
+        top: 35vw;
+    }
+    .advantages-title {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        width: 35vw;
+        left: 10vw;
+        position: relative;
+    }
+    .advantages-desc {
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+        width: 25vw;
+        left: 10vw;
+        position: relative;
+    }
+    .pricing {
+        height: 50vw;
+        padding-top: 45vw;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+    }
+    .adv-card-image img {
+        width: 5vw;
+        margin-right: 3vw;
+    }
+    .advantages-cards {
+        position: relative;
+        left: 2vw;
+    }
+    .adv-title {
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .adv-desc {
+        width: 18vw;
+        font-size: 1.2vw;
+    }
+    .contacts {
+        height: 50vw;
+        top: 60vw;
+        position: relative;
+    }
+    .footer {
+        background: #1B1B1B;
+        height: 41vw;
+        top: 80vw;
+        right: 2vw;
+        position: relative;
+    }
+    .pricing-switch {
+        position: relative;
+        left: 37vw;
+        top: 1vw;
+        font-size: 2vw;
+    }
+    .pricing-card {
+        background: transparent;
+        color: black;
+        border: 0.2vw solid #1B1B1B;
+        height: 32vw;
+        width: 25vw;
+        margin-right: 5vw;
+        border-radius: 0.5vw;
+    }
+    .pricing-card-title {
+        position: relative;
+        top: 1.5vw;
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .pricing-card-price sub {
+        font-size: 1.5vw;
+    }
+    .pricing-card li {
+        list-style-type: none;
+        text-align: left;
+        position: relative;
+        left: 2vw;
+        font-size: 1.5vw;
+        top: 1vw;
+        margin-top: 1vw;
+    }
+    .pricing-cards {
+        top: 5vw;
+        position: relative;
+        left: 5vw;
+    }
+    .pricing-card-button {
+        top: 4vw;
+        font-size: 1.5vw;
+    }
+    .pricing-card-center {
+        height: 34vw;
+        width: 26vw;
+    }
+    .contacts-card {
+        width: 25vw;
+        height: 16vw;
+    }
+    .contacts-card img {
+        width: 6vw;
+        position: relative;
+        bottom: 2.5vw;
+    }
+    .cont-card-title {
+        font-weight: 600;
+        font-size: 2.5vw;
+    }
+    .cont-card-desc {
+        font-size: 1.1vw;
+    }
+    .contacts-cards {
+        position: relative;
+        left: 5vw;
+        top: 5vw;
     }
 }
 
@@ -670,132 +977,316 @@ a:hover {
         margin-top: 0;
         margin-bottom: 0.3rem;
     }
-    .navbar-img {
-        width: 2vw;
-    }
-    .header-body {
-        position: relative;
-        right: 5vw;
-    }
-    .navbar {
-        width: 110vw;
-        height: 10vw;
-    }
-    .navbar-button {
-        bottom: 0.9vw;
-    }
-    .logotype {
-        position: relative;
-        left: 0vw;
-        width: 25vw;
-    }
-    .navbar-links {
-        left: 5vw;
-        font-size: 1.4vw;
+    .mobile-navbar {
+        display: none;
     }
     .header-body-title {
-        width: 45vw;
-        font-size: 3.5vw;
+        width: 40vw;
+        font-weight: 700;
+        font-size: 3vw;
+        bottom: 6vw;
+        right: 7vw;
+        position: relative;
     }
     .header-body-desc {
-        width: 40vw;
+        width: 45vw;
         font-weight: 400;
-        font-size: 1.5vw;
+        bottom: 6vw;
+        font-size: 2vw;
+        right: 7vw;
+        position: relative;
     }
     .header-body-button {
-        font-size: 1.5vw;
+        font-size: 2vw;
         top: 0vw;
-    }
-    .unique-title {
         position: relative;
-        left: 0vw;
+        right: 0vw;
     }
-    .unique-list {
-        top: 9vw;
-        left: 19vw;
+    .header-image img {
+        width: 35vw;
+        position: relative;
+        left: 2vw;
+        top: 14vw;
+    }
+    .header-line {
+        left: 0vw;
+        bottom: 6vw;
+    }
+    .header-line {
+        top: 15.6vw;
+    }
+    .text-title {
+        font-size: 4vw;
+    }
+    .text-desc {
+        font-size: 2vw;
+        width: 80vw;
+        left: 10vw;
+        position: relative;
     }
     .unique {
         background: #F5F5F5;
         position: relative;
-        width: 110vw;
-        right: 3vw;
-        height: 35vw;
+        width: 105vw;
+        right: 5vw;
+        height: 55vw;
+    }
+    .mobile-menu {
+        background: #1B1B1B;
+        height: 200vw;
+        max-width: 50vw;
+        position: fixed;
+        z-index: 998;
+        top: 0vw;
+        left: 0vw;
+    }
+    .menu-logotype {
+        position: relative;
+        right: 2vw;
+        top: 2vw;
+    }
+    .navbar-menu {
+        list-style-type: none;
+        color: white;
+        font-size: 3vw;
+    }
+    .navbar-menu li {
+        margin-bottom: 3vw;
+    }
+    .mb-default {
+        width: 0%;
+        transition: 0.4s;
+    }
+    .mb-active {
+        width: 100% !important;
+        transition: 0.4s;
+        display: inline !important;
+    }
+    .hamburger-button {
+        position: relative;
+        left: 90vw;
+        top: 2vw;
+        display: inline;
+        font-size: 3vw;
+        cursor: pointer;
+    }
+    .menu-links {
+        position: relative;
         top: 5vw;
+        right: 1vw;
+    }
+    body {
+        position: relative;
+        left: 2vw;
+    }
+    .pricing-card-button {
+        top: 4vw;
+    }
+    .header-contacts {
+        left: 85vw;
+    }
+    .unique-list {
+        top: 10vw;
+        left: 10vw;
+    }
+    .nav-link {
+        right: 16.2vw;
+    }
+    .navbar-links {
+        left: 36vw;
+    }
+    .unique-number img {
+        width: 12vw;
+    }
+    .unique-number {
+        margin-right: 10vw;
+    }
+    .number-desc {
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5vw;
+        width: 15vw;
+        text-align: center;
+        position: relative;
+        right: 2vw;
+        top: 1vw;
     }
     .number-line {
         position: relative;
-        bottom: 8vw;
+        width: 7vw;
+        height: 0.5vw;
+        background: #C4C4C4;
+        bottom: 18vw;
+        left: 14vw;
     }
-    .digital-title {
+    .digital-card {
+        background: #F8F8F8;
+        transition: 0.4s;
+        height: 23vw;
+        width: 18vw;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.5vw;
+        margin-right: 3vw;
+    }
+    .digital-card-desc {
         position: relative;
+        top: 3vw;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2vw;
+        width: 18vw;
+        left: 0vw;
+    }
+    .digital-cards {
+        position: relative;
+        left: 5vw;
         top: 10vw;
+    }
+    .digital-card-fix img {
+        width: 6.5vw !important;
+        position: relative;
+        top: 4vw;
+    }
+    .digital-card img {
+        position: relative;
+        top: 3vw;
+        width: 5vw;
     }
     .digital-card-title {
         position: relative;
-        top: 6vw;
+        top: 4vw;
         font-weight: 600;
+        font-size: 1.3vw;
     }
     .advantages {
         position: relative;
         height: 50vw;
-        top: 25vw;
+        top: 35vw;
+    }
+    .advantages-title {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        width: 35vw;
+        left: 10vw;
+        position: relative;
+    }
+    .advantages-desc {
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8vw;
+        width: 35vw;
+        left: 10vw;
+        position: relative;
     }
     .pricing {
         height: 50vw;
-        padding-top: 35vw;
+        padding-top: 45vw;
         font-family: 'Roboto', sans-serif;
         font-size: 1vw;
     }
+    .adv-card-image img {
+        width: 5vw;
+        margin-right: 3vw;
+    }
+    .advantages-cards {
+        position: relative;
+        left: 2vw;
+    }
+    .adv-title {
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .adv-desc {
+        width: 18vw;
+        font-size: 1.2vw;
+    }
     .contacts {
         height: 50vw;
-        top: 45vw;
+        top: 60vw;
         position: relative;
     }
-    .pricing-card-price {
-        font-size: 3vw;
-        top: 0vw;
+    .footer {
+        background: #1B1B1B;
+        height: 41vw;
+        top: 80vw;
+        right: 2vw;
         position: relative;
+    }
+    .pricing-switch {
+        position: relative;
+        left: 37vw;
+        top: 1vw;
+        font-size: 2vw;
+    }
+    .pricing-card {
+        background: transparent;
+        color: black;
+        border: 0.2vw solid #1B1B1B;
+        height: 32vw;
+        width: 25vw;
+        margin-right: 5vw;
+        border-radius: 0.5vw;
+    }
+    .pricing-card-title {
+        position: relative;
+        top: 1.5vw;
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .pricing-card-price sub {
+        font-size: 1.5vw;
     }
     .pricing-card li {
         list-style-type: none;
         text-align: left;
         position: relative;
         left: 2vw;
-        top: 0vw;
-        margin-top: 1.5vw;
-    }
-    .pricing-card-button {
-        top: 3vw;
+        font-size: 1.5vw;
+        top: 1vw;
+        margin-top: 1vw;
     }
     .pricing-cards {
         top: 5vw;
         position: relative;
-        left: 10vw;
+        left: 1vw;
     }
-    .contacts-cards {
+    .logotype-fix {
         position: relative;
-        left: 12vw;
-        top: 5vw;
+        right: 5vw;
+    }
+    .pricing-card-button {
+        top: 4vw;
+        font-size: 1.5vw;
     }
     .nav-link {
         display: block;
         padding: .2rem 0.5rem;
-        right: 16vw;
     }
-    .footer-cor {
+    .pricing-card-center {
+        height: 34vw;
+        width: 26vw;
+    }
+    .contacts-card {
+        width: 25vw;
+        height: 16vw;
+    }
+    .contacts-card img {
+        width: 6vw;
         position: relative;
-        color: white;
-        bottom: 4vw;
+        bottom: 2.5vw;
     }
-    .header-contacts {
-        top: 17vw;
-        left: 86vw;
+    .cont-card-title {
+        font-weight: 600;
+        font-size: 2.5vw;
     }
-    .header-image img {
-        width: 30vw;
+    .cont-card-desc {
+        font-size: 1.1vw;
+    }
+    .contacts-cards {
         position: relative;
-        left: 9vw;
-        top: 7vw;
+        left: 5vw;
+        top: 5vw;
     }
 }
 
@@ -807,114 +1298,312 @@ a:hover {
     .navbar-img {
         width: 1vw;
     }
-    .navbar {
-        width: 110vw;
-        height: 10vw;
+    .mobile-navbar {
+        display: none;
     }
-    .logotype {
+    .logotype-fix {
         position: relative;
-        left: 0vw;
-        width: 25vw;
-    }
-    .navbar-links {
-        left: 5vw;
-        font-size: 1.4vw;
+        right: 5vw;
     }
     .header-body-title {
-        width: 45vw;
-        font-size: 3.5vw;
+        width: 40vw;
+        font-weight: 700;
+        font-size: 3vw;
+        bottom: 6vw;
+        right: 7vw;
+        position: relative;
     }
     .header-body-desc {
-        width: 40vw;
+        width: 45vw;
         font-weight: 400;
-        font-size: 1.5vw;
+        bottom: 6vw;
+        font-size: 2vw;
+        right: 7vw;
+        position: relative;
     }
     .header-body-button {
-        font-size: 1.5vw;
+        font-size: 2vw;
         top: 0vw;
+        position: relative;
+        right: 0vw;
+    }
+    .header-image img {
+        width: 35vw;
+        position: relative;
+        left: 2vw;
+        top: 14vw;
+    }
+    .header-line {
+        left: 0vw;
+        bottom: 6vw;
+    }
+    .header-line {
+        top: 15.6vw;
+    }
+    .text-title {
+        font-size: 4vw;
+    }
+    .text-desc {
+        font-size: 2vw;
+        width: 80vw;
+        left: 10vw;
+        position: relative;
     }
     .unique {
         background: #F5F5F5;
         position: relative;
-        width: 110vw;
-        right: 3vw;
-        height: 35vw;
+        width: 105vw;
+        right: 5vw;
+        height: 55vw;
+    }
+    .mobile-menu {
+        background: #1B1B1B;
+        height: 200vw;
+        max-width: 50vw;
+        position: fixed;
+        z-index: 998;
+        top: 0vw;
+        left: 0vw;
+    }
+    .menu-logotype {
+        position: relative;
+        right: 2vw;
+        top: 2vw;
+    }
+    .navbar-menu {
+        list-style-type: none;
+        color: white;
+        font-size: 3vw;
+    }
+    .navbar-menu li {
+        margin-bottom: 3vw;
+    }
+    .mb-default {
+        width: 0%;
+        transition: 0.4s;
+    }
+    .mb-active {
+        width: 100% !important;
+        transition: 0.4s;
+        display: inline !important;
+    }
+    .hamburger-button {
+        position: relative;
+        left: 90vw;
+        top: 2vw;
+        display: inline;
+        font-size: 3vw;
+        cursor: pointer;
+    }
+    .menu-links {
+        position: relative;
         top: 5vw;
+        right: 1vw;
+    }
+    body {
+        position: relative;
+        left: 2vw;
+    }
+    .pricing-card-button {
+        top: 4vw;
+    }
+    .header-contacts {
+        left: 85vw;
+    }
+    .unique-list {
+        top: 10vw;
+        left: 10vw;
+    }
+    .nav-link {
+        right: 16.2vw;
+    }
+    .navbar-links {
+        left: 36vw;
+    }
+    .unique-number img {
+        width: 12vw;
+    }
+    .unique-number {
+        margin-right: 10vw;
+    }
+    .number-desc {
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5vw;
+        width: 15vw;
+        text-align: center;
+        position: relative;
+        right: 2vw;
+        top: 1vw;
     }
     .number-line {
         position: relative;
-        bottom: 8vw;
+        width: 7vw;
+        height: 0.5vw;
+        background: #C4C4C4;
+        bottom: 18vw;
+        left: 14vw;
     }
-    .digital-title {
+    .digital-card {
+        background: #F8F8F8;
+        transition: 0.4s;
+        height: 23vw;
+        width: 18vw;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.5vw;
+        margin-right: 3vw;
+    }
+    .digital-card-desc {
         position: relative;
+        top: 3vw;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2vw;
+        width: 18vw;
+        left: 0vw;
+    }
+    .digital-cards {
+        position: relative;
+        left: 5vw;
         top: 10vw;
+    }
+    .digital-card-fix img {
+        width: 6.5vw !important;
+        position: relative;
+        top: 4vw;
+    }
+    .digital-card img {
+        position: relative;
+        top: 3vw;
+        width: 5vw;
     }
     .digital-card-title {
         position: relative;
-        top: 6vw;
+        top: 4vw;
         font-weight: 600;
+        font-size: 1.3vw;
     }
     .advantages {
         position: relative;
         height: 50vw;
-        top: 25vw;
+        top: 35vw;
+    }
+    .advantages-title {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        width: 35vw;
+        left: 10vw;
+        position: relative;
+    }
+    .advantages-desc {
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+        width: 25vw;
+        left: 10vw;
+        position: relative;
     }
     .pricing {
         height: 50vw;
-        padding-top: 35vw;
+        padding-top: 45vw;
         font-family: 'Roboto', sans-serif;
         font-size: 1vw;
     }
+    .adv-card-image img {
+        width: 5vw;
+        margin-right: 3vw;
+    }
+    .advantages-cards {
+        position: relative;
+        left: 2vw;
+    }
+    .adv-title {
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .adv-desc {
+        width: 18vw;
+        font-size: 1.2vw;
+    }
     .contacts {
         height: 50vw;
-        top: 45vw;
+        top: 60vw;
         position: relative;
     }
-    .pricing-card-price {
-        font-size: 3vw;
-        top: 0vw;
+    .footer {
+        background: #1B1B1B;
+        height: 41vw;
+        top: 80vw;
+        right: 2vw;
         position: relative;
+    }
+    .pricing-switch {
+        position: relative;
+        left: 37vw;
+        top: 1vw;
+        font-size: 2vw;
+    }
+    .pricing-card {
+        background: transparent;
+        color: black;
+        border: 0.2vw solid #1B1B1B;
+        height: 32vw;
+        width: 25vw;
+        margin-right: 5vw;
+        border-radius: 0.5vw;
+    }
+    .pricing-card-title {
+        position: relative;
+        top: 1.5vw;
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .pricing-card-price sub {
+        font-size: 1.5vw;
     }
     .pricing-card li {
         list-style-type: none;
         text-align: left;
         position: relative;
         left: 2vw;
-        top: 0vw;
-        margin-top: 1.5vw;
-    }
-    .pricing-card-button {
-        top: 3vw;
+        font-size: 1.5vw;
+        top: 1vw;
+        margin-top: 1vw;
     }
     .pricing-cards {
         top: 5vw;
         position: relative;
-        left: 10vw;
+        left: 1vw;
+    }
+    .pricing-card-button {
+        top: 4vw;
+        font-size: 1.5vw;
+    }
+    .pricing-card-center {
+        height: 34vw;
+        width: 26vw;
+    }
+    .contacts-card {
+        width: 25vw;
+        height: 16vw;
+    }
+    .contacts-card img {
+        width: 6vw;
+        position: relative;
+        bottom: 2.5vw;
+    }
+    .cont-card-title {
+        font-weight: 600;
+        font-size: 2.5vw;
+    }
+    .cont-card-desc {
+        font-size: 1.1vw;
     }
     .contacts-cards {
         position: relative;
-        left: 12vw;
+        left: 5vw;
         top: 5vw;
-    }
-    .nav-link {
-        display: block;
-        padding: .2rem 0.5rem;
-        right: 16vw;
-    }
-    .footer-cor {
-        position: relative;
-        color: white;
-        bottom: 4vw;
-    }
-    .header-contacts {
-        top: 17vw;
-        left: 86vw;
-    }
-    .header-image img {
-        width: 30vw;
-        position: relative;
-        left: 9vw;
-        top: 7vw;
     }
 }
 
@@ -923,116 +1612,307 @@ a:hover {
         margin-top: 0;
         margin-bottom: 0.3rem;
     }
-    .navbar-img {
-        width: 1vw;
-    }
-    .navbar {
-        width: 110vw;
-        height: 10vw;
-    }
-    .logotype {
-        position: relative;
-        left: 0vw;
-        width: 25vw;
-    }
-    .navbar-links {
-        left: 5vw;
-        font-size: 1.4vw;
+    .mobile-navbar {
+        display: none;
     }
     .header-body-title {
-        width: 45vw;
-        font-size: 3.5vw;
+        width: 40vw;
+        font-weight: 700;
+        font-size: 3vw;
+        bottom: 6vw;
+        right: 7vw;
+        position: relative;
     }
     .header-body-desc {
-        width: 40vw;
+        width: 45vw;
         font-weight: 400;
-        font-size: 1.5vw;
+        bottom: 6vw;
+        font-size: 2vw;
+        right: 7vw;
+        position: relative;
     }
     .header-body-button {
-        font-size: 1.5vw;
+        font-size: 2vw;
         top: 0vw;
+        position: relative;
+        right: 0vw;
+    }
+    .header-image img {
+        width: 35vw;
+        position: relative;
+        left: 2vw;
+        top: 14vw;
+    }
+    .header-line {
+        left: 0vw;
+        bottom: 6vw;
+    }
+    .header-line {
+        top: 15.6vw;
+    }
+    .text-title {
+        font-size: 4vw;
+    }
+    .text-desc {
+        font-size: 2vw;
+        width: 80vw;
+        left: 10vw;
+        position: relative;
     }
     .unique {
         background: #F5F5F5;
         position: relative;
-        width: 110vw;
-        right: 3vw;
-        height: 35vw;
+        width: 105vw;
+        right: 5vw;
+        height: 55vw;
+    }
+    .mobile-menu {
+        background: #1B1B1B;
+        height: 200vw;
+        max-width: 50vw;
+        position: fixed;
+        z-index: 998;
+        top: 0vw;
+        left: 0vw;
+    }
+    .menu-logotype {
+        position: relative;
+        right: 2vw;
+        top: 2vw;
+    }
+    .navbar-menu {
+        list-style-type: none;
+        color: white;
+        font-size: 3vw;
+    }
+    .navbar-menu li {
+        margin-bottom: 3vw;
+    }
+    .mb-default {
+        width: 0%;
+        transition: 0.4s;
+    }
+    .mb-active {
+        width: 100% !important;
+        transition: 0.4s;
+        display: inline !important;
+    }
+    .hamburger-button {
+        position: relative;
+        left: 90vw;
+        top: 2vw;
+        display: inline;
+        font-size: 3vw;
+        cursor: pointer;
+    }
+    .menu-links {
+        position: relative;
         top: 5vw;
+        right: 1vw;
+    }
+    body {
+        position: relative;
+        left: 2vw;
+    }
+    .pricing-card-button {
+        top: 4vw;
+    }
+    .header-contacts {
+        left: 84vw;
+    }
+    .unique-list {
+        top: 10vw;
+        left: 10vw;
+    }
+    .nav-link {
+        right: 16.2vw;
+    }
+    .navbar-links {
+        left: 36vw;
+    }
+    .unique-number img {
+        width: 12vw;
+    }
+    .unique-number {
+        margin-right: 10vw;
+    }
+    .number-desc {
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5vw;
+        width: 15vw;
+        text-align: center;
+        position: relative;
+        right: 2vw;
+        top: 1vw;
     }
     .number-line {
         position: relative;
-        bottom: 8vw;
+        width: 7vw;
+        height: 0.5vw;
+        background: #C4C4C4;
+        bottom: 18vw;
+        left: 14vw;
     }
-    .digital-title {
+    .digital-card {
+        background: #F8F8F8;
+        transition: 0.4s;
+        height: 23vw;
+        width: 18vw;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.5vw;
+        margin-right: 3vw;
+    }
+    .digital-card-desc {
         position: relative;
+        top: 3vw;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2vw;
+        width: 18vw;
+        left: 0vw;
+    }
+    .digital-cards {
+        position: relative;
+        left: 5vw;
         top: 10vw;
+    }
+    .digital-card-fix img {
+        width: 6.5vw !important;
+        position: relative;
+        top: 4vw;
+    }
+    .digital-card img {
+        position: relative;
+        top: 3vw;
+        width: 5vw;
     }
     .digital-card-title {
         position: relative;
-        top: 6vw;
+        top: 4vw;
         font-weight: 600;
+        font-size: 1.3vw;
     }
     .advantages {
         position: relative;
         height: 50vw;
-        top: 25vw;
+        top: 35vw;
+    }
+    .advantages-title {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        width: 35vw;
+        left: 10vw;
+        position: relative;
+    }
+    .advantages-desc {
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+        width: 25vw;
+        left: 10vw;
+        position: relative;
     }
     .pricing {
         height: 50vw;
-        padding-top: 35vw;
+        padding-top: 45vw;
         font-family: 'Roboto', sans-serif;
         font-size: 1vw;
     }
+    .adv-card-image img {
+        width: 5vw;
+        margin-right: 3vw;
+    }
+    .advantages-cards {
+        position: relative;
+        left: 2vw;
+    }
+    .adv-title {
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .adv-desc {
+        width: 18vw;
+        font-size: 1.2vw;
+    }
     .contacts {
         height: 50vw;
-        top: 45vw;
+        top: 60vw;
         position: relative;
     }
-    .pricing-card-price {
-        font-size: 3vw;
-        top: 0vw;
+    .footer {
+        background: #1B1B1B;
+        height: 41vw;
+        top: 80vw;
+        right: 2vw;
         position: relative;
+    }
+    .pricing-switch {
+        position: relative;
+        left: 37vw;
+        top: 1vw;
+        font-size: 2vw;
+    }
+    .pricing-card {
+        background: transparent;
+        color: black;
+        border: 0.2vw solid #1B1B1B;
+        height: 32vw;
+        width: 25vw;
+        margin-right: 5vw;
+        border-radius: 0.5vw;
+    }
+    .pricing-card-title {
+        position: relative;
+        top: 1.5vw;
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    .pricing-card-price sub {
+        font-size: 1.5vw;
     }
     .pricing-card li {
         list-style-type: none;
         text-align: left;
         position: relative;
         left: 2vw;
-        top: 0vw;
-        margin-top: 1.5vw;
-    }
-    .pricing-card-button {
-        top: 3vw;
+        font-size: 1.5vw;
+        top: 1vw;
+        margin-top: 1vw;
     }
     .pricing-cards {
         top: 5vw;
         position: relative;
-        left: 10vw;
+        left: 5vw;
+    }
+    .pricing-card-button {
+        top: 4vw;
+        font-size: 1.5vw;
+    }
+    .pricing-card-center {
+        height: 34vw;
+        width: 26vw;
+    }
+    .contacts-card {
+        width: 25vw;
+        height: 16vw;
+    }
+    .contacts-card img {
+        width: 6vw;
+        position: relative;
+        bottom: 2.5vw;
+    }
+    .cont-card-title {
+        font-weight: 600;
+        font-size: 2.5vw;
+    }
+    .cont-card-desc {
+        font-size: 1.1vw;
     }
     .contacts-cards {
         position: relative;
-        left: 12vw;
+        left: 5vw;
         top: 5vw;
-    }
-    .nav-link {
-        display: block;
-        padding: .2rem 0.5rem;
-        right: 16vw;
-    }
-    .footer-cor {
-        position: relative;
-        color: white;
-        bottom: 4vw;
-    }
-    .header-contacts {
-        top: 17vw;
-        left: 86vw;
-    }
-    .header-image img {
-        width: 30vw;
-        position: relative;
-        left: 9vw;
-        top: 7vw;
     }
 }
